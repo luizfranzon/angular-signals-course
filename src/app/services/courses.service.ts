@@ -1,11 +1,10 @@
-import { inject, Injectable } from '@angular/core';
-import { HttpClient, HttpContext } from '@angular/common/http';
-import { environment } from '../../environments/environment';
 import { firstValueFrom } from 'rxjs';
 import { Course } from '../models/course.model';
-import { GetCoursesResponse } from '../models/get-courses.response';
+import { inject, Injectable } from '@angular/core';
 import { CreateCourse } from './courses-fetch.service';
-import { SkipLoading } from './skip-loading.context';
+import { environment } from '../../environments/environment';
+import { HttpClient, HttpContext } from '@angular/common/http';
+import { GetCoursesResponse } from '../models/get-courses.response';
 
 @Injectable({
   providedIn: 'root',

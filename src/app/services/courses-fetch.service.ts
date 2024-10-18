@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
 import { Course } from '../models/course.model';
+import { environment } from '../../environments/environment';
 
 export type CreateCourse = Omit<Course, 'id'>;
 
